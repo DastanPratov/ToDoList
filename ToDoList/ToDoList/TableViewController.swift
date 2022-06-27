@@ -19,11 +19,11 @@ class TableViewController: UITableViewController {
             textField.placeholder = "Введите название"
         }
         
-        let alertAcitonFirst = UIAlertAction(title: "Cancel", style: .destructive) { allert in
+        let alertAcitonFirst = UIAlertAction(title: "Отмена", style: .destructive) { allert in
             
         }
         
-        let alertAcitonSecond = UIAlertAction(title: "Create", style: .cancel) { allert in
+        let alertAcitonSecond = UIAlertAction(title: "Создать", style: .cancel) { allert in
             let newItem = alertController.textFields![0].text
             additem(nameItem: newItem!)
             self.tableView.reloadData()
